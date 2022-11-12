@@ -228,3 +228,69 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't fin
 JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://jupiter.cloud.planittesting.com."
 1668281104112	Marionette	INFO	Stopped listening on port 58294
+1668282290736	geckodriver	INFO	Listening on 127.0.0.1:58691
+1668282293795	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "58692" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofileOYvJTA"
+*** You are running in headless mode.
+1668282294205	Marionette	INFO	Marionette enabled
+1668282294209	Marionette	INFO	Listening on port 58701
+Read port: 58701
+WebDriver BiDi listening on ws://127.0.0.1:58692
+1668282294302	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofileOYvJTA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58692/devtools/browser/afb87bdc-b600-4d52-9e22-cdcb295f500f
+1668282297975	Marionette	INFO	Stopped listening on port 58701
+1668282302156	geckodriver	INFO	Listening on 127.0.0.1:58732
+1668282305234	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "58733" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofilez7AAnn"
+*** You are running in headless mode.
+1668282305841	Marionette	INFO	Marionette enabled
+1668282305848	Marionette	INFO	Listening on port 58743
+Read port: 58743
+WebDriver BiDi listening on ws://127.0.0.1:58733
+1668282305985	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofilez7AAnn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58733/devtools/browser/a794454f-d477-4884-8f4f-3e1fb0c589f0
+1668282310421	Marionette	INFO	Stopped listening on port 58743
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 719: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1668282314932	geckodriver	INFO	Listening on 127.0.0.1:58775
+1668282317965	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "58776" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofilexnBVBS"
+*** You are running in headless mode.
+1668282318353	Marionette	INFO	Marionette enabled
+1668282318357	Marionette	INFO	Listening on port 58786
+WebDriver BiDi listening on ws://127.0.0.1:58776
+Read port: 58786
+1668282318539	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofilexnBVBS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58776/devtools/browser/e339a15d-4780-4a03-a64b-6c04278847af
+1668282360496	Marionette	INFO	Stopped listening on port 58786
+1668282364208	geckodriver	INFO	Listening on 127.0.0.1:58834
+1668282367242	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "58835" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofileH67m4y"
+*** You are running in headless mode.
+1668282367748	Marionette	INFO	Marionette enabled
+1668282367755	Marionette	INFO	Listening on port 58844
+Read port: 58844
+WebDriver BiDi listening on ws://127.0.0.1:58835
+1668282367940	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofileH67m4y\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58835/devtools/browser/8db7cc43-8913-4066-8206-37d73f90b4ea
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+1668282379881	Marionette	INFO	Stopped listening on port 58844
+1668282383294	geckodriver	INFO	Listening on 127.0.0.1:58881
+1668282386345	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "58882" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofileV5xMrA"
+*** You are running in headless mode.
+1668282386744	Marionette	INFO	Marionette enabled
+1668282386748	Marionette	INFO	Listening on port 58892
+Read port: 58892
+WebDriver BiDi listening on ws://127.0.0.1:58882
+1668282386845	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PAOLO~1.MON\\AppData\\Local\\Temp\\rust_mozprofileV5xMrA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58882/devtools/browser/30bfe520-75db-4288-9f42-3db841098b61
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://jupiter.cloud.planittesting.com."
+1668282397066	Marionette	INFO	Stopped listening on port 58892
