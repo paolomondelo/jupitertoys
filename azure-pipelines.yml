@@ -27,6 +27,6 @@ steps:
   displayName: 'Install dependencies'
 
 
-- powershell: python -m robot -i Smoke tests\test_jupiter_toys.robot
+- powershell: robot -i Smoke tests\test_jupiter_toys.robot
   displayName: 'Run Robot Scripts'
   
