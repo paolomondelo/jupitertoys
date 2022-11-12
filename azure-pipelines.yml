@@ -4,10 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- main
+- master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'vs2017-win2016'
 strategy:
   matrix:
     Python37:
@@ -18,10 +18,11 @@ steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
+    architecture: 'x64'
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    python -m pip install --upgrade pip && pip install strings && pip install robotframework && pip install robotframework-seleniumlibrary && pip install collection
+    python -m pip install --upgrade pip && pip install strings && pip install robotframework && pip install robotframework-seleniumlibrary && pip install collection && npm install chromedriver
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
