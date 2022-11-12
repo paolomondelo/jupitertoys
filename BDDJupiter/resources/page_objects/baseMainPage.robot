@@ -1,0 +1,16 @@
+*** Variables ***
+${btn_submit}    xpath=//a[contains(text(), "Submit")]
+${strong_feedback_message}    xpath=//strong[contains(text(), "We welcome your feedback")]
+${strong_alert_message}    xpath=//div[@ui-if='form.$dirty && form.$invalid']
+${forename_error_message}    xpath=//span[@id='forename-err']
+${email_error_message}    xpath=//span[@id='email-err']
+${msg_error_message}    xpath=//span[@id='message-err']
+${input_forename}    xpath=//input[@id='forename']
+${input_surname}    xpath=//input[@id='surname']
+${input_email}    xpath=//input[@id='email']
+${input_telephone}    xpath=//input[@id='telephone']
+${input_message}    xpath=//textarea[@id='message']
+${modal_submission}    xpath=//div[@class='popup modal hide ng-scope']
+${alert_success}    xpath=//div[@class='alert alert-success']
+${btn_back}    xpath=//a[@ng-click='goBack()']
+
