@@ -1,32 +1,39 @@
-# Python package
-# Create and test a Python package on multiple Python versions.
-# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
-
 trigger:
-- main
+- master
 
 pool:
-  vmImage: 'vs2017-win2016'
+  vmImage: 'windows-2019'
+
 strategy:
   matrix:
     Python37:
       python.version: '3.7'
   maxParallel: 1
 
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
 steps:
+
 - task: UsePythonVersion@0
-  inputs:
+  inputs: 
     versionSpec: '$(python.version)'
     architecture: 'x64'
-  displayName: 'Use Python $(python.version)'
 
-- script: |
-    pip install --upgrade pip && pip install strings && pip install robotframework && pip install robotframework-seleniumlibrary && pip install collection && npm install chromedriver
-    pip install -r requirements.txt
+- script: pip install robotframework robotframework-pabot robotframework-seleniumlibrary webdrivermanager
   displayName: 'Install dependencies'
 
+- powershell: |
+   Write-Host "Robot Framework tests"
+   robot -x 'outputxunit.xml' -t 'Your Test' '$(Build.SourcesDirectory)\[YourProjectName]\tests\.'
+  failOnStderr: true
+  displayName: 'Run Robot Framework Tests'
+  continueOnError: true
 
-- powershell: robot -i Smoke tests\test_jupiter_toys.robot
-  displayName: 'Run Robot Scripts'
-  
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results'
+  continueOnError: true
+  inputs:
+    testResultsFiles: outputxunit.xml
