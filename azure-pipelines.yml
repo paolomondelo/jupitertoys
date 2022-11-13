@@ -1,0 +1,31 @@
+trigger:
+- master
+
+jobs:
+
+- job: 'Test'
+  pool:
+    vmImage: 'ubuntu-latest'
+  strategy:
+    matrix:
+      Python37:
+        python.version: '3.7'
+    maxParallel: 1
+
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+      architecture: 'x64'
+
+  - script: pip install robotframework robotframework-seleniumlibrary && npm install chromedriver
+    displayName: 'Install dependencies'
+  
+  - powershell: robot --pythonpath . -x outputxunit.xml TestCases.robot
+    displayName: 'Run Robot Scripts'
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: outputxunit.xml
+      searchFolder: 'D:\a\1\s\'
+      condition: succeededOrFailed()
+      displayName: 'Publish Test Results outputxunit.xml'
