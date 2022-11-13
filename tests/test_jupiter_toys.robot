@@ -10,15 +10,6 @@ Test Teardown     Close Browser
 
 
 *** Test Cases ***
-#Test Case Scenario# 0 :Test Run
-#  [Tags]  Smoke
-#  [Template]  The user populates the required fields
-#  This is the first execution variable  x1
-#  This is the second execution          x2
-#  This is the first execution variable  x3
-#  This is the fourth execution          x4
-#  This is the fifth execution variable  x5
-#  This is the sixth execution           x6
 
 Test Case Scenario# 1 : Validate that error handling messages should be displayed when not populating the required fields
   [Tags]  Smoke
